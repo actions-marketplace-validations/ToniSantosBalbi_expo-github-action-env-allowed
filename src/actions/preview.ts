@@ -75,11 +75,12 @@ export async function previewAction(input = previewInput()) {
 function sanitizeCommand(input: string): string {
   let command = input.trim();
 
-  if (!command.startsWith('eas')) {
-    throw new Error(`The command must start with "eas", received "${command}"`);
-  } else {
-    command = command.replace(/^eas/, '').trim();
-  }
+  //REMOVED TO ALLOW APPENDING ENV VAR FILES
+  // if (!command.startsWith('eas')) {
+  //   throw new Error(`The command must start with "eas", received "${command}"`);
+  // } else {
+  //   command = command.replace(/^eas/, '').trim();
+  // }
 
   if (!command.includes('--json')) {
     command += ' --json';
