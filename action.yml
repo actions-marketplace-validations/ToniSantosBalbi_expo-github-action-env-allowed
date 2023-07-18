@@ -1,6 +1,6 @@
 ---
-name: Expo GitHub Action
-author: Expo
+name: Expo GitHub Action with ENV var allowed
+author: Toni Santos Balbi
 description: Publish, build or manage your Expo app with GitHub Actions
 branding:
   icon: terminal
